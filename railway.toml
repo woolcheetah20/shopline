@@ -1,0 +1,8 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm install -g pnpm && pnpm install --frozen-lockfile && BASE_PATH=/ pnpm --filter @workspace/shopline run build && pnpm --filter @workspace/api-server run build"
+
+[deploy]
+startCommand = "NODE_ENV=production node artifacts/api-server/dist/index.mjs"
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
