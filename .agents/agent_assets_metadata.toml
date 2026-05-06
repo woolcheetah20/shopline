@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "w1gQ5qNqx0SuJSuV7FnfG"
+uri = "file://shopline-source.tar.gz"
+type = "unspecified"
+title = "Shopline — Updated Source Code"
